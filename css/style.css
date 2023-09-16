@@ -1,0 +1,48 @@
+/* CSS Boiler plate */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+ }
+html , body
+{ 
+height: 100%;
+width: 100%;
+}
+/* Main styling starts here */
+
+.navbar
+{
+    height: 3rem;
+    background-color: crimson;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.navbar img
+{
+    width:2.5rem;
+    height:2.5rem;
+    border-radius: 50%;
+}
+
+.navlist
+{
+    display:flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navlist li
+{
+    list-style: none;
+}
+
+.navlist li a
+{
+    text-decoration: none;
+    color: white;
+}
