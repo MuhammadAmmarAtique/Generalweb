@@ -12,37 +12,81 @@ width: 100%;
 }
 /* Main styling starts here */
 
+/* 1)Navbar Styling */
 .navbar
 {
     height: 3rem;
-    background-color: crimson;
+    background-color: lightseagreen;
     display: flex;
-    justify-content:space-between;
+    /* justify-content:space-between; */
     align-items: center;
     padding: 0 1rem;
 }
 
-.navbar img
+.leftnav .logo img
 {
     width:2.5rem;
     height:2.5rem;
     border-radius: 50%;
 }
 
-.navlist
+.leftnav
 {
     display:flex;
     align-items: center;
     gap: 2rem;
+    width: 50%;
+    height: 100%;
+
 }
 
-.navlist li
+.leftnav li
 {
     list-style: none;
 }
 
-.navlist li a
+.leftnav li a
 {
     text-decoration: none;
     color: white;
+}
+
+.leftnav li a:hover
+{
+    color: lightgreen;
+}
+
+.rightnav
+{
+display: flex;    
+align-items: center;
+justify-content: flex-end;
+gap: 1rem;
+width: 50%;
+height: 100%;
+
+}
+
+.rightnav input[type=text]
+{
+    border: none;
+    padding: 0.2rem 0.7rem;
+    border-radius: 0.2rem;
+}
+
+#navbutton
+{
+    border: none;
+    color: white;
+    background-color:crimson;
+    font-size: 1rem;
+    padding: 0.2rem 0.7rem;
+    border-radius: 0.2rem;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+#navbutton:active
+{
+    transform: scale(0.9);
 }
