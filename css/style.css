@@ -56,15 +56,21 @@ width: 100%;
     color: lightgreen;
 }
 
+
 .rightnav
 {
-display: flex;    
-align-items: center;
-justify-content: flex-end;
-gap: 1rem;
-width: 50%;
-height: 100%;
+    display: flex;    
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+    width: 50%;
+    height: 100%;
+    
+}
 
+.navbar i
+{
+    display: none;
 }
 
 .rightnav input[type=text]
@@ -73,6 +79,7 @@ height: 100%;
     padding: 0.2rem 0.7rem;
     border-radius: 0.2rem;
 }
+
 
 #navbutton
 {
@@ -90,3 +97,43 @@ height: 100%;
 {
     transform: scale(0.9);
 }
+
+
+
+
+
+
+/* Media Queries */
+
+/* a)For Navbar */
+
+@media (max-width: 768px) {
+    .navbar .leftnav 
+    {
+        display: none;
+    }
+    
+    .navbar .rightnav 
+    {
+        display: none;
+    }
+
+    .navbar 
+    {
+       justify-content: flex-end;
+    }
+    .navbar  i
+   {
+    display: block;
+    color: white;
+    font-size: 1.5rem;
+   }
+
+
+
+
+
+}
+
+
+  
