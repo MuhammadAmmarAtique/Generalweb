@@ -21,6 +21,9 @@ width: 100%;
     /* justify-content:space-between; */
     align-items: center;
     padding: 0 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .leftnav .logo img
@@ -62,7 +65,7 @@ width: 100%;
     display: flex;    
     align-items: center;
     justify-content: flex-end;
-    gap: 1rem;
+    gap: 0.6rem;
     width: 50%;
     height: 100%;
     
@@ -91,6 +94,7 @@ width: 100%;
     border-radius: 0.2rem;
     text-align: center;
     transition: all 0.2s ease;
+    cursor: pointer;
 }
 
 .allbuttons:active
@@ -104,8 +108,21 @@ width: 100%;
     background-size: cover;
     background-blend-mode: darken;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed;  
+    /* use this property so that navabar & herosection bg  kind of merge with each other  */
 }
+.background2
+{
+    background:  rgba(0, 0, 0, 0.6) url(../images/bg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+
+}
+
+
+
+
 
 /* 1)Herosection Styling */
 
@@ -124,12 +141,20 @@ width: 100%;
     width: 70%;
     display: flex;
     flex-direction: column;
-    align-items:center;
+    /* align-items:center; */
     justify-content:center;
-    /* padding-left: 10rem; */
+    padding-left: 10rem;
 }
 
+.hs-left h1
+{
+    font-size: 3rem;
+}
 
+.hs-left p
+{
+    padding-bottom: 0.5rem;
+}
 
 .hs-right
 {
@@ -147,9 +172,45 @@ width: 100%;
     border-radius: 50%;
 }
 
+/* 2)Information Section Styling */
 
+.infosection
+{
+    height: 62rem; 
+    color: white;
+}
 
+/* section class styling */
+.section 
+{
+    height: 20rem;
+    /* max-width: 80%; */
+    margin: 0rem 5rem;
+    /* background-color: grey; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
 
+.section h1
+{
+    font-size: 1.5rem;
+    margin-bottom: 0.4rem;
+}
+
+.section img
+{
+    height:13rem;
+    width: 13rem;
+    border-radius: 0.2rem;
+    padding: 0.4rem;
+}
+/* sectionb */
+.sectionb
+{
+    flex-direction: row-reverse;
+}
 
 
 
@@ -171,9 +232,12 @@ width: 100%;
 
 /* Media Queries */
 
-/* a)For Navbar */
+
 
 @media (max-width: 768px) {
+
+    /* a)For Navbar */
+
     .navbar .leftnav 
     {
         display: none;
@@ -204,9 +268,11 @@ width: 100%;
 .hs-left
 { 
 width: 90%;
+padding-left: 0;
+
 }
 
-.hs-left h2
+.hs-left h1
 { 
 font-size: 3.5rem;
 }
@@ -220,6 +286,38 @@ padding: 0.5rem 0;
 { 
 display: none;
 }
+
+/* c)For Information section */
+
+.section  {
+    flex-direction:column;
+    margin: 0rem 0.6rem;
+
+}
+
+.section h1 {
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.section p {
+    font-size: 0.8rem;
+}
+
+.section img
+{
+    height:5rem;
+    width: 5rem;
+    border-radius: 0.2rem;
+    padding: 0.2rem;
+    display: none;
+    
+}
+
+
+
+
+
 
 
 }
