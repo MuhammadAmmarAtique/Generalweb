@@ -1,5 +1,4 @@
 
-```markdown
 # Ammar Laptop's Landing Page
 
 ![Ammar Laptop's Landing Page](images/preview.png)
