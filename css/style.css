@@ -147,7 +147,7 @@ width: 100%;
 
 .hs-left h1
 {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .hs-left p
@@ -264,7 +264,7 @@ form textarea
 /* Media Queries */
 @media (max-width: 1000px) {
 
-    /* a)For Navbar */
+    /* a)Media Queries For Navbar */
 
      
     .navbar{
@@ -307,7 +307,7 @@ form textarea
     } 
 
 
-/* b)For HeroSection*/
+/* b)Media Queries For HeroSection*/
 .herosection
 {
     flex-direction: column-reverse;
@@ -331,7 +331,7 @@ font-size: 2.5rem;
     width: 50%;
 }
 
-/* c)For Information section */
+/* c)Media Queries For Information section */
 
 .section  {
     flex-direction:column-reverse;
@@ -339,7 +339,7 @@ font-size: 2.5rem;
    
 }
 
-/* d)Contact us Section  */
+/* d)Media Queries for Contact us Section  */
 
 .form h1
 {
