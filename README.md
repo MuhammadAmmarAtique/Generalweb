@@ -21,9 +21,9 @@ Welcome to the Ammar Laptop's Landing Page repository! This project showcases a 
 
 1. Clone the repository to your local machine:
 
-   ```sh
+
    git clone https://github.com/MuhammadAmmarAtique/LaptopSellingWeb
-   ```
+
 
 2. Open the `index.html` file in your web browser to explore the Ammar Laptop's Landing Page.
 
