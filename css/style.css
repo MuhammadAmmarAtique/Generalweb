@@ -12,6 +12,11 @@ width: 100%;
 }
 /* Main styling starts here */
 
+html
+{
+    scroll-behavior: smooth;
+}
+
 /* 1)Navbar Styling */
 .navbar
 {
@@ -119,8 +124,6 @@ width: 100%;
     background-blend-mode: darken;
 
 }
-
-
 
 
 
